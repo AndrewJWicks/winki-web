@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Winki — Fire Island Delivered</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #111111;
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 40px;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      color: #f69d72;
+      letter-spacing: -0.5px;
+    }
+
+    nav a {
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: #fff; }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 100px 24px 80px;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 72px);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+      max-width: 800px;
+    }
+
+    .hero h1 span { color: #f69d72; }
+
+    .hero p {
+      margin-top: 24px;
+      font-size: 18px;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.65);
+      max-width: 520px;
+    }
+
+    .cta {
+      margin-top: 40px;
+      display: inline-block;
+      background: #f69d72;
+      color: #111;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 16px 36px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .cta:hover { opacity: 0.88; }
+
+    .divider {
+      width: 48px;
+      height: 3px;
+      background: #f69d72;
+      border-radius: 2px;
+      margin: 80px auto 0;
+    }
+
+    .about {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 60px 24px 100px;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #f69d72;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 17px;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.7);
+    }
+
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 24px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      color: rgba(255,255,255,0.3);
+    }
+
+    footer a {
+      color: rgba(255,255,255,0.4);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    footer a:hover { color: #fff; }
+
+    @media (max-width: 600px) {
+      nav { padding: 20px 24px; }
+      footer { flex-direction: column; gap: 8px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <span class="logo">Winki</span>
+    <a href="/privacy.html">Privacy Policy</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Fire Island Delivered<br><span>Winki Style</span></h1>
+    <p>
+      Food, drinks, gear — anything you need, right to your door.
+      No car, no ferry run, no hassle. Just Fire Island the way it should be.
+    </p>
+    <a class="cta" href="#">Coming Soon to the App Store</a>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="about">
+    <h2>Who is Winki?</h2>
+    <p>
+      Hi, I'm Hunter — but my friends call me Winki. I've been delivering
+      things on Fire Island for my family for years: groceries off the ferry,
+      cold drinks on a hot afternoon, forgotten sunscreen at the beach.
+      Eventually people started asking if I could do it for them too.
+      So I thought — why not make it real? Winki is that idea, grown up.
+      Same island, same care, now available to everyone.
+    </p>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 Winki. All rights reserved.</span>
+    <a href="/privacy.html">Privacy Policy</a>
+  </footer>
+
+</body>
+</html>
