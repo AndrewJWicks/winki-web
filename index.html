@@ -137,11 +137,14 @@
       border-top: 1px solid rgba(255,255,255,0.08);
       padding: 24px 40px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
       font-size: 13px;
       color: rgba(255,255,255,0.3);
     }
+
+    footer .footer-copy { flex: 1; text-align: left; }
+    footer .footer-contact { flex: 1; text-align: center; }
+    footer .footer-privacy { flex: 1; text-align: right; }
 
     footer a {
       color: rgba(255,255,255,0.4);
@@ -150,6 +153,12 @@
     }
 
     footer a:hover { color: #fff; }
+
+    footer .footer-contact a {
+      color: #f69d72;
+      font-weight: 600;
+    }
+    footer .footer-contact a:hover { color: #fff; }
 
     @media (max-width: 600px) {
       nav { padding: 20px 24px; }
@@ -188,9 +197,9 @@
   </section>
 
   <footer>
-    <span>&copy; 2026 Winki. All rights reserved.</span>
-    <a href="mailto:support@winkiapp.com">Contact</a>
-    <a href="/privacy.html">Privacy Policy</a>
+    <span class="footer-copy">&copy; 2026 Winki. All rights reserved.</span>
+    <span class="footer-contact">Questions? <a href="mailto:support@winkiapp.com">Reach out</a></span>
+    <a class="footer-privacy" href="/privacy.html">Privacy Policy</a>
   </footer>
 
 </body>
